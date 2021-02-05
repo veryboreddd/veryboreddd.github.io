@@ -1,0 +1,227 @@
+/*
+    VARIABLES
+*/
+
+:root {
+
+    /*
+        COLORS
+    */
+
+    --primary-background: #000;
+    --primary-text: #fff;
+    --secondary-text: #fff;
+
+    /*
+    --secondary-text: #24b273;
+    */
+}
+
+/*
+    BODY
+*/
+
+body {
+    background: var(--primary-background);
+    color: var(--primary-text);
+
+    -webkit-font-smoothing: antialiased;
+
+    height: 100%;
+    margin: 0;
+
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.625;
+}
+
+.page-width {
+    zoom: 1;
+    max-width: 980px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 640px) {
+    .page-width {
+        
+    }
+}
+
+/*
+    POPUP
+*/
+
+.age-restriction {
+    width: 66%;
+    margin: 33% auto;
+    max-height: 33%;
+    min-height: 33%;
+
+    background-color: black;
+    border: 2px solid rgba(36, 178, 115, .0);
+
+    box-shadow:
+    0 2.8px 2.2px rgba(36, 178, 115, 0.034),
+    0 6.7px 5.3px rgba(36, 178, 115, 0.048),
+    0 12.5px 10px rgba(36, 178, 115, 0.06),
+    0 22.3px 17.9px rgba(36, 178, 115, 0.072),
+    0 41.8px 33.4px rgba(36, 178, 115, 0.086),
+    0 100px 80px rgba(36, 178, 115, 0.12);
+}
+
+@media only screen and (max-width: 640px) {
+    .age-restriction {
+        width: 100%;
+    }
+}
+
+.age-restriction .icon-center {
+    width: 50%;
+    margin: 20px auto;
+
+    text-align: center;
+}
+
+.age-restriction .text-center {
+    width: 80%;
+    margin: 20px auto;
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-size: 1rem;
+}
+
+.age-restriction .button-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.age-restriction .button-left {
+    display: inline-block;
+    text-align: left;
+}
+
+.age-restriction .button-right {
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+@media only screen and (max-width: 640px) {
+    .age-restriction .button-left {
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+    
+    .age-restriction .button-right {
+        display: none;
+    }
+}
+
+/*
+    TEXT
+*/
+
+h1, h2, h3, h4 {
+    letter-spacing: inherit;
+    text-transform: inherit;
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {
+        max-width: 800px;
+    }
+}
+
+a {
+    text-decoration: none!important;
+    vertical-align: middle;
+}
+
+/*
+    BUTTONS
+*/
+.btn {
+    -moz-user-select: "none";
+    -ms-user-select: "none";
+    -webkit-user-select: "none";
+    user-select: "none";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    width: auto;
+    background-color: #24b273;
+    border-radius: 0;
+    color: black;
+    border: 2px solid #24b273;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: outline 0.1s linear;
+    box-sizing: border-box;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: #24b273;
+    outline: 2px solid #24b273;
+    border: none;
+    transition: outline 0.1s linear;
+}
+
+.btn--secondary:hover {
+    outline: 4px solid #24b273;
+}
+
+/*
+    SVGS
+*/
+
+.svg-icon {
+    width: 30px;
+    height: 30px;
+}
+  
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #24b273;
+}
+  
+.svg-icon circle {
+    stroke: var(--secondary-text);
+    stroke-width: 1;
+}
+
+/*
+    TRANSITIONS
+*/
+
+.hover-scale {
+    transition: transform 0.15s ease-out;
+}
+
+.hover-scale:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.hover-scale:active {
+    transform: scale(1, 1);
+}
+
